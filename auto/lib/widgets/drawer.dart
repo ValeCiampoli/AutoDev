@@ -5,7 +5,7 @@ class NavigationDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(width: 330,
+    return Drawer(width: 300,
     child: Container(color: Colors.grey,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,

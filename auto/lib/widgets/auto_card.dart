@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
 import '../models/auto_model.dart';
 
 class AutoCard extends StatefulWidget {
