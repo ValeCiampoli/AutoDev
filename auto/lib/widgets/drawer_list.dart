@@ -1,3 +1,4 @@
+import 'package:auto/pages/client_screen.dart';
 import 'package:flutter/material.dart';
 
 class DrawerList extends StatefulWidget {
@@ -20,8 +21,9 @@ class _DrawerListState extends State<DrawerList> {
                   child: ListTile(leading: Icon(Icons.assignment_ind_sharp, color: Colors.white,size: 30,), 
                   title: Text("CLIENTI", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),),),
                 ),
-              ),
-               onTap: () {},),
+              ), onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const ClientScreen()));
+               },),
             GestureDetector(
               child: Container(
                 decoration: const BoxDecoration(border: Border(bottom: BorderSide(color: Colors.white))),
@@ -49,16 +51,6 @@ class _DrawerListState extends State<DrawerList> {
                   padding: EdgeInsets.only(top:10.0, bottom: 10),
                   child: ListTile(leading: Icon(Icons.account_balance_wallet_rounded, color: Colors.white,size: 30,), 
                   title: Text("AUTO VENDUTE", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),),),
-                ),
-              ),
-              onTap: () {}),
-               GestureDetector(
-              child: Container(
-                decoration: const BoxDecoration(border: Border(bottom: BorderSide(color: Colors.white))),
-                child: const Padding(
-                  padding: EdgeInsets.only(top:10.0, bottom: 10),
-                  child: ListTile(leading: Icon(Icons.settings, color: Colors.white,size: 30,), 
-                  title: Text("IMPOSTAZIONI", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),),),
                 ),
               ),
               onTap: () {}),
